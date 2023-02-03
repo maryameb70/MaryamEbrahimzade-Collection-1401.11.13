@@ -1,6 +1,6 @@
-package org.example.practiceone.main;
+package ir.mapsa.practiceone.main;
 
-import org.example.practiceone.CalcTimeComplexity;
+import ir.mapsa.practiceone.CalcTimeComplexity;
 
 import java.util.*;
 

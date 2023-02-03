@@ -1,4 +1,4 @@
-package org.example.practiceone;
+package ir.mapsa.practiceone;
 
 import java.util.Collection;
 

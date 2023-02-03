@@ -1,8 +1,5 @@
-package org.example.practicetwo;
-import org.example.practicetwo.checkuniquecharacters.UniqueCharacters;
-
-import java.util.Hashtable;
-import java.util.Map;
+package ir.mapsa.practicetwo;
+import ir.mapsa.practicetwo.checkuniquecharacters.UniqueCharacters;
 
 public class Main {
     public static void main(String[] args) throws Exception {

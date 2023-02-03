@@ -1,4 +1,4 @@
-package org.example.practicetwo.checkuniquecharacters;
+package ir.mapsa.practicetwo.checkuniquecharacters;
 
 import java.util.Hashtable;
 import java.util.Map;
