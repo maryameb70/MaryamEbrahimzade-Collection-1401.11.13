@@ -6,13 +6,16 @@ public class LinkedList {
 
     public void appendToTail(int data) {
         Node newNode = new Node(data);
-        if (head == null) {
-            head = newNode;
-            tail = newNode;
+        if (isEmpty()) {
+            head = tail = newNode;
         } else {
             tail.setNext(newNode);
             tail = newNode;
         }
+    }
+
+    private static boolean isEmpty() {
+        return head == null;
     }
 
     public Node getNode(int data) {
@@ -26,12 +29,8 @@ public class LinkedList {
         return new Node(data);
     }
 
-    public Node getHead() {
-        return head;
-    }
-
     public Node getPrevious(Node node) {
-        Node current = getHead();
+        Node current = head;
         while (current != null) {
             if (current.getNext() == node) {
                 return current;
@@ -41,17 +40,28 @@ public class LinkedList {
         return null;
     }
 
+    private int find(int data) {
+        int index = 0;
+        Node current = head;
+        while (current != null) {
+            if (current.getData() == data) return index;
+            current = current.getNext();
+            index++;
+        }
+
+        return -1;
+    }
+
     public Node deleteNode(Node head, int data) {
-        if (head == null) {
+        if (head == null || find(data) == -1) {
             return null;
         }
         Node currNode = head, prev = null;
         if (currNode.getData() == data) {
-            prev=getPrevious(head);
+            prev = getPrevious(head);
             prev.setNext(currNode.getNext());
             return head;
         }
-
         while (currNode != null && currNode.getData() != data) {
             prev = currNode;
             currNode = currNode.getNext();
@@ -59,9 +69,6 @@ public class LinkedList {
 
         if (currNode != null) {
             prev.setNext(currNode.getNext());
-        }
-        if (currNode == null) {
-            System.out.println(data + " not found");
         }
         return head;
     }
