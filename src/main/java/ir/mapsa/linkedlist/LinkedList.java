@@ -1,6 +1,8 @@
 package ir.mapsa.linkedlist;
 
 public class LinkedList {
+    // TODO: don't need set null (default is null)
+    // TODO: why this field is static?
     private static Node head = null;
     private Node tail = null;
 

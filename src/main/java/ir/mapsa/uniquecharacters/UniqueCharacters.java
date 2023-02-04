@@ -9,6 +9,7 @@ public class UniqueCharacters {
             throw new Exception();
         }
         Map<Integer, Boolean> hashtable = new Hashtable<>();
+        // TODO: Do you think this piece of code can be optimized?
         for (char ch : element.toCharArray()) {
             hashtable.put((int) ch, hashtable.containsKey((int) ch));
         }
