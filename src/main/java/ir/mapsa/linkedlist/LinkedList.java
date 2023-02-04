@@ -1,7 +1,7 @@
 package ir.mapsa.linkedlist;
 
 public class LinkedList {
-    private static Node head = null;
+    private Node head ;
     private Node tail = null;
 
     public void appendToTail(int data) {
@@ -14,7 +14,7 @@ public class LinkedList {
         }
     }
 
-    private static boolean isEmpty() {
+    private boolean isEmpty() {
         return head == null;
     }
 

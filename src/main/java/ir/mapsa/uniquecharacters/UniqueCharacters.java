@@ -4,14 +4,17 @@ import java.util.Hashtable;
 import java.util.Map;
 
 public class UniqueCharacters {
-    public static boolean check(String element) throws Exception {
+    public static boolean isCheck(String element) throws Exception {
         if (element == null || element.length() == 0) {
             throw new Exception();
         }
         Map<Integer, Boolean> hashtable = new Hashtable<>();
         for (char ch : element.toCharArray()) {
-            hashtable.put((int) ch, hashtable.containsKey((int) ch));
+            if (hashtable.containsKey((int)ch)) {
+                return false;
+            }
+            hashtable.put((int) ch, true);
         }
-        return hashtable.containsValue(true);
+        return true;
     }
 }
