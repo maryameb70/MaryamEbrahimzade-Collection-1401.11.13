@@ -1,4 +1,4 @@
-package ir.mapsa.practicethree.linkedlist;
+package ir.mapsa.linkedlist;
 
 public class LinkedList {
     private Node head = null;
@@ -15,29 +15,29 @@ public class LinkedList {
         }
     }
 
-    public Node getNode(int item) {
+    public Node getNode(int data) {
         Node current = head;
         while (current != null) {
-            if (current.getData() == item) {
+            if (current.getData() == data) {
                 return current;
             }
             current = current.getNext();
         }
-        return new Node(item);
+        return new Node(data);
     }
 
 
-    public Node deleteByKey(Node head, int value) {
+    public Node deleteNode(Node head, int data) {
         if (head == null) {
             return null;
         }
         Node currNode = head, prev = null;
-        if (currNode.getData() == value) {
+        if (currNode.getData() == data) {
             head = currNode.getNext();
             return head;
         }
 
-        while (currNode != null && currNode.getData() != value) {
+        while (currNode != null && currNode.getData() != data) {
             prev = currNode;
             currNode = currNode.getNext();
         }
@@ -46,7 +46,7 @@ public class LinkedList {
             prev.setNext(currNode.getNext());
         }
         if (currNode == null) {
-            System.out.println(value + " not found");
+            System.out.println(data + " not found");
         }
         return head;
     }

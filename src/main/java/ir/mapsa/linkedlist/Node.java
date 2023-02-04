@@ -1,4 +1,4 @@
-package ir.mapsa.practicethree.linkedlist;
+package ir.mapsa.linkedlist;
 
 
 public class Node extends LinkedList {

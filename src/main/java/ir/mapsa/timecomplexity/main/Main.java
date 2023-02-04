@@ -1,6 +1,6 @@
-package ir.mapsa.practiceone.main;
+package ir.mapsa.timecomplexity.main;
 
-import ir.mapsa.practiceone.CalcTimeComplexity;
+import ir.mapsa.timecomplexity.CalcTimeComplexity;
 
 import java.util.*;
 

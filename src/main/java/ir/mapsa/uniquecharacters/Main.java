@@ -1,5 +1,5 @@
-package ir.mapsa.practicetwo;
-import ir.mapsa.practicetwo.checkuniquecharacters.UniqueCharacters;
+package ir.mapsa.uniquecharacters;
+import ir.mapsa.uniquecharacters.checkuniquecharacters.UniqueCharacters;
 
 public class Main {
     public static void main(String[] args) throws Exception {

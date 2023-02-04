@@ -1,4 +1,4 @@
-package ir.mapsa.practiceone;
+package ir.mapsa.timecomplexity;
 
 import java.util.Collection;
 

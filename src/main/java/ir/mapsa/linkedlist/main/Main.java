@@ -1,7 +1,7 @@
-package ir.mapsa.practicethree.main;
+package ir.mapsa.linkedlist.main;
 
-import ir.mapsa.practicethree.linkedlist.LinkedList;
-import ir.mapsa.practicethree.linkedlist.Node;
+import ir.mapsa.linkedlist.LinkedList;
+import ir.mapsa.linkedlist.Node;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class Main {
         System.out.print("Nodes of singly linked list:");
         list.display();
         Node node = new Node();
-//        node.deleteByKey(list.getNode(2), 2); ???
-        node.deleteByKey(list.getNode(1), 2);
+//        node.deleteNode(list.getNode(2), 2); ???
+        node.deleteNode(list.getNode(1), 2);
         System.out.print("Linked list elements after remove:");
         list.display();
     }
