@@ -9,7 +9,6 @@ public class Main {
         System.out.println(UniqueCharacters.check("ASCII values"));
         System.out.println(UniqueCharacters.check("ASCIi values"));
     }
-
 }
 
 

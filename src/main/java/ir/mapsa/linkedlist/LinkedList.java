@@ -1,7 +1,7 @@
 package ir.mapsa.linkedlist;
 
 public class LinkedList {
-    private Node head = null;
+    private static Node head = null;
     private Node tail = null;
 
     public void appendToTail(int data) {
@@ -26,6 +26,20 @@ public class LinkedList {
         return new Node(data);
     }
 
+    public Node getHead() {
+        return head;
+    }
+
+    public Node getPrevious(Node node) {
+        Node current = getHead();
+        while (current != null) {
+            if (current.getNext() == node) {
+                return current;
+            }
+            current = current.getNext();
+        }
+        return null;
+    }
 
     public Node deleteNode(Node head, int data) {
         if (head == null) {
@@ -33,7 +47,8 @@ public class LinkedList {
         }
         Node currNode = head, prev = null;
         if (currNode.getData() == data) {
-            head = currNode.getNext();
+            prev=getPrevious(head);
+            prev.setNext(currNode.getNext());
             return head;
         }
 

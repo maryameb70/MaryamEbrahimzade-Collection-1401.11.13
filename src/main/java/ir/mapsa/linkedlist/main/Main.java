@@ -13,8 +13,8 @@ public class Main {
         System.out.print("Nodes of singly linked list:");
         list.display();
         Node node = new Node();
-//        node.deleteNode(list.getNode(2), 2); ???
-        node.deleteNode(list.getNode(1), 2);
+        node.deleteNode(list.getNode(2), 2);
+        node.deleteNode(list.getNode(1), 3);
         System.out.print("Linked list elements after remove:");
         list.display();
     }
