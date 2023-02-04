@@ -1,4 +1,4 @@
-package ir.mapsa.uniquecharacters.checkuniquecharacters;
+package ir.mapsa.uniquecharacters;
 
 import java.util.Hashtable;
 import java.util.Map;

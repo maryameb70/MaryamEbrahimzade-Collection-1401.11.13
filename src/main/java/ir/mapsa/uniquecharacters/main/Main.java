@@ -1,5 +1,6 @@
-package ir.mapsa.uniquecharacters;
-import ir.mapsa.uniquecharacters.checkuniquecharacters.UniqueCharacters;
+package ir.mapsa.uniquecharacters.main;
+
+import ir.mapsa.uniquecharacters.UniqueCharacters;
 
 public class Main {
     public static void main(String[] args) throws Exception {

@@ -11,10 +11,8 @@ public class CalcTimeComplexity {
     public CalcTimeComplexity(Collection<Integer> collection) {
         this.collection = collection;
     }
-
     public CalcTimeComplexity() {
     }
-
     public Collection<Integer> getCollection() {
         return collection;
     }

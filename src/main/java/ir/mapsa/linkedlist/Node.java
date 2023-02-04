@@ -1,6 +1,5 @@
 package ir.mapsa.linkedlist;
 
-
 public class Node extends LinkedList {
     private int data;
     private Node next;
