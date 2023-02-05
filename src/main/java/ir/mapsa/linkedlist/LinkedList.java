@@ -2,7 +2,7 @@ package ir.mapsa.linkedlist;
 
 public class LinkedList {
     private Node head;
-    private Node tail = null;
+    private Node tail;
 
     public void appendToTail(int data) {
         Node newNode = new Node(data);
